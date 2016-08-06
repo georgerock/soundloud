@@ -6,23 +6,22 @@
   "scripts": {
     "start": "node server.js"
   },
-"repository": {
-  "type": "git",
-  "url": "https://github.com/georgerock/soundloud.git"
-},
-"keywords": [
- "soundloud",
- "music",
- "player"
-],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/georgerock/soundloud.git"
+  },
+  "keywords": [
+    "soundloud",
+    "music",
+    "player"
+  ],
   "author": "Cosma George <cosma.george@yahoo.com>",
   "license": "MIT",
-  "main": "index.js",
   "dependencies": {
+    "body-parser": "~1.4.2",
     "electron": "~1.3.2",
     "express": "~4.14.0",
-    "mongoose": "~4.5.8",
-    "body-parser" : "~1.4.2",
-    "method-override" : "~2.0.2"
+    "method-override": "~2.0.2",
+    "mysql": "mysqljs/mysql"
   }
 }

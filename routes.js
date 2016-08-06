@@ -9,7 +9,7 @@ var Nerd = require('./models/nerd');
         // sample api route
         app.get('/api/nerds', function(req, res) {
             // use mongoose to get all nerds in the database
-            Nerd.find(function(err, nerds) {
+              Nerd.find(function(err, nerds) {
                 // if there is an error retrieving, send the error.
                 // nothing after res.send(err) will execute
                 if (err)
@@ -24,8 +24,8 @@ var Nerd = require('./models/nerd');
 
         // frontend routes =========================================================
         // route to handle all angular requests
-        app.get('*', function(req, res) {
-            res.sendfile('./public/views/index.html'); // load our public/index.html file
+        app.get('/home', function(req, res) {
+            res.sendFile('public/index.html' , { root : __dirname}); // load our public/index.html file
         });
 
     };
