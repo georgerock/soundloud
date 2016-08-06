@@ -4,8 +4,23 @@
   "description": "Music player that searches for songs on youtube and soundcloud",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "Cosma George",
-  "license": "MIT"
+"repository": {
+  "type": "git",
+  "url": "https://github.com/georgerock/soundloud.git"
+},
+"keywords": [
+ "soundloud",
+ "music",
+ "player"
+],
+  "author": "Cosma George <cosma.george@yahoo.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^1.3.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.8"
+  }
 }
